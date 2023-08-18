@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Typing Speed Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="gameName">Typing Speed Game</div>
+        <div class="container">
+            <div class="levels">
+                <div>
+                    <span>level : <span class="current-level">Easy</span></span>
+                    <ul>
+                        <li class="level active">Easy</li>
+                        <li class="level">Normal</li>
+                        <li class="level">Hard</li>
+                    </ul>
+                </div>
+                <span>You have <span class="period"></span> Seconds To Type The Word</span>
+            </div>
+            <div class="start">Start Game</div>
+            <div class="the-word"></div>
+            <div class="inputDiv">
+                <input type="text" class="input">
+            </div>
+            <div class="time-score">
+                <div class="time">Time Left : <span></span> s</div>
+                <div class="score">Score : <span class="result">0</span> Of <span class="total"></span></div>
+            </div>
+            <div class="next-words"></div>
+            <div class="instruction">
+                <p>- The Word Will Appear When Game Started And Next Words Too</p>
+                <p>- This Level Include <span class="wordsNumber"></span> Words, You Have To type Them All Correct To Win</p>
+            </div>
+            <div class="footer">
+                Made by <span class="footer-span">Moneim</span>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <audio class="feild" src="sounds/feild.mp3"></audio>
+        <audio class="success" src="sounds/success.mp3"></audio>
+        <script src="main.js"></script>
+    </body>
+    </html>
